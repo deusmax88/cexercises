@@ -29,6 +29,7 @@ int main(int argc, char** argv) {
     for (int i = 0; i < num_of_threads; i++) {
         pthread_join(tids[i],(void **) &res);
         printf("%d", *(res));
+        total += *(res);
     }
 
     printf ("Got total %d\n", total);
