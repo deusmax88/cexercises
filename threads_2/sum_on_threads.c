@@ -7,7 +7,7 @@ long long sum = 0;
 void * sum_runner(void * arg) {
     long long* limit_ptr = (long long *) arg;
     long long limit = *limit_ptr;
-
+    
     for (long long i = 0; i <= limit; i++) {
         sum += i;
     }
